@@ -1,66 +1,38 @@
 
+
 body{
-    background-image: linear-gradient(to top,rgb(7, 7, 7),rgb(77, 74, 74));
-    height: 97vh;
-}
-#motherBox{
-    height: 100%;
-    #profile{
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        position: absolute;
-        top:40%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-    }
-    #profileText{
-        position: absolute;
-        top:50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-    }
-    nav{
-        position: relative;
-        left: 50%;
-        top:2%;
-        display: flex;
-        gap: 30px;
-        flex-direction: row;
-        position: absolute;
-        transform: translateX(-50%);
-        a{
-            text-decoration: none;
-            font-size: 20px;
-            transition: 0.2s all;
+    background-color: grey;
+
+    #motherBox{
+
+        #titleBox{
+            text-align: center;
+            color:antiquewhite
         }
-        #a1:hover{
-            color: aliceblue;
-            text-decoration: underline;
-            font-size: 25px;
+
+        #userInputBox{
+            text-align: center;
+            margin-top:9rem;
+            #userInput{
+                font-size: 1.4rem;
+                border:2px solid;
+                border-radius: 0.3em;
+
+                &~#submitButton{
+                    cursor: pointer;
+                    border: 2px solid;
+                    border-radius: 0.3em;
+                    font-size: 1.4rem;
+                    &:hover{
+                        transform: translateY(-2px);
+                        background-color: bisque;
+                    }
+                }
+            }
         }
-        #a2:hover{
-            color: aliceblue;
-            text-decoration: underline;
-            font-size: 25px;
-        }
-        #a3:hover{
-            color: aliceblue;
-            font-size: 25px;
-            text-decoration: underline;
+
+        #resultBox{
+            text-align: center;
         }
     }
-    #extraText{
-        position: absolute;
-        position: absolute;
-        top:60%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        /* font-size: larger; */
-        /* font-weight: bolder; */
-    }
-}
-*{
-    font-family: Roboto;
-    color:rgb(182, 182, 182);
 }
