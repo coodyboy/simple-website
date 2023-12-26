@@ -36,3 +36,14 @@ body{
         }
     }
 }
+#homePageButton{
+    position: absolute;
+    top:10px;
+    cursor: pointer;
+}
+
+@media (max-width:418px){
+    #submitButton{
+        margin-top: 40px;
+    }
+}
